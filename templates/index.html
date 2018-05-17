@@ -1,0 +1,93 @@
+{% extends "base.html" %}
+
+{% block title %} Index {% endblock title %}
+{% block page_content %}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-sm-6">
+            <h1>Plattforms:</h1>
+            <p>Active on following plattforms:</p>
+            <ul>
+                <li><a href="https://www.codecademy.com">Codecademy</a></li>
+                <li><a href="https://www.sololearn.com">Sololearn</a></li>
+                <li><a href="https://www.hackerrank.com">Hackerrank</a></li>
+                <li><a href="https://github.com/formigaVie">Github</a></li>
+            </ul>
+        </div>
+        <div class="col-sm-6">
+            <h1>Skills:</h1>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>Python</li>
+                <li>Google App Engine</li>
+                <li>Git</li>
+                <li>ClearCase</li>
+
+                <li>Leading a team (5 employees)</li>
+            </ul>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-6">
+            <h1>Certificates:</h1>
+            <ul>
+                <li>ECDL Advanced Expert</li>
+                <li>EBCL Certified Manager</li>
+                <li>IPMA Level D - Junior Projekt Manager</li>
+            </ul>
+</div>
+<div class="container-fluid">
+    <h1>Sololearn Cerfiticates</h1>
+  <div class="jumbotron">
+    <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+  <!-- Indicators -->
+      <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+        <li data-target="#carousel-example-generic" data-slide-to="3"></li>
+      </ol>
+
+  <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+            <div class="img-center">
+                <img src="../assets/img/cert-1014-7186353.jpg" alt="Sololearn_HTML-cert" width="100%" class="img-responsive">
+            </div>
+          <!-- <div class="carousel-caption"></div> -->
+        </div>
+        <div class="item">
+            <div class="img-center">
+                <img src="../assets/img/cert-1023-7186353.jpg" alt="Sololearn_css-cert" width="100%" class="img-responsive">
+            </div>
+          <!-- <div class="carousel-caption"></div> -->
+        </div>
+        <div class="item">
+            <div class="img-center">
+                <img src="../assets/img/cert-1024-7186353.jpg" alt="Sololearn_js-cert" width="100%" class="img-responsive">
+            </div>
+          <!-- <div class="carousel-caption"></div> -->
+        </div>
+        <div class="item">
+            <div class="img-center">
+                <img src="../assets/img/cert-1060-7186353.jpg" alt="Sololearn_sql-cert" width="100%" class="img-responsive">
+            </div>
+          <!-- <div class="carousel-caption"></div> -->
+        </div>
+      </div>
+
+      <!-- Controls -->
+      <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
+    </div>
+  </div>
+</div>
+
+{% endblock page_content %}

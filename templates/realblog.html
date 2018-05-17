@@ -1,0 +1,56 @@
+{% extends "base.html" %}
+
+{% block title %} RealBlog {% endblock title %}
+{% block page_content %}
+<div class="container-fluid">
+    {% if logged_in %}
+
+        <h2>You are logged in!</h2>
+        <p> To logout click here: <a href="{{logout_url}}">Logout</a> </p>
+</div>
+<div class="container-fluid">
+    <h1>Real Blog Page</h1>
+    <h2>Post your comments</h2>
+    <form method="post">
+      <div class="input-group">
+        <span class="input-group-addon">name</span>
+        <input type="text" placeholder="Name" name="username">
+      </div>
+      <div class="input-group">
+        <span class="input-group-addon">message</span>
+        <input type="text" placeholder="Message" name="message_text" required autofocus>
+      </div>
+      <div class="input-group">
+        <span class="input-group-addon">email</span>
+        <input type="email" placeholder="Email" name="useremail">
+      </div>
+    <button type="submit">Submit</button>
+</form>
+
+<form>
+    <h2>Do you like to have a look at the "fake" deletes: <a href="/fakedelete">List of "deleted messages"</a></h2>
+</form>
+
+<div class="container-fluid">
+<h2>History</h2>
+{% for message in messages %}
+    <div class="panel panel-info">
+      <div class="panel-heading">
+        <h3 class="panel-title">{{ message.name }},{{message.email_text}},{{message.created}} <a href="/message/{{ message.key.id() }}/edit"> edit </a></br><a href="/message/{{ message.key.id() }}/delete"> delete </a></h3>
+      </div>
+      <div class="panel-body">
+        {{ message.message_text }}
+      </div>
+    </div>
+{% endfor %}
+</div>
+
+</div>
+    {% else %}
+
+        <h2>Hello anonymous</h2>
+        <p> To login click here: <a href="{{login_url}}">Login</a> </p>
+
+    {% endif %}
+
+{% endblock page_content %}

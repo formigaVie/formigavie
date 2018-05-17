@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+
+{% block title %} Login Page {% endblock title %}
+
+
+{% block page_content %}
+
+<h1>Login Test Page</h1>
+
+    {% if logged_in %}
+    
+        <h2>You are logged in!</h2>
+        <p> To logout click here: <a href="{{logout_url}}">Logout</a> </p>
+    
+    {% else %}
+    
+        <h2>You are logged out!</h2>
+        <p> To login click here: <a href="{{login_url}}">Login</a> </p>
+
+    {% endif %}
+
+{% endblock page_content %}

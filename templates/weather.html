@@ -1,0 +1,77 @@
+{% extends "base.html" %}
+
+{% block title %} Weather {% endblock title %}
+
+{% block page_content %}
+<div class="container-fluid">
+    <h1>Weatherinformation</h1>
+    <div class="row">
+        <div class="col-sm-6">
+            <h2>Weather in location {{ weather_info.name }}, {{weather_info.sys.country}}</h2>
+            <ul class="a">
+                <li>Description: {{ weather_info.weather[0].description }}</li>
+                <li>Min. temperature: {{ weather_info.main.temp_min }} °C</li>
+                <li>Current temperature: {{ weather_info.main.temp }} °C</li>
+                <li>Max. temperature: {{ weather_info.main.temp_max }} °C</li>
+                <li>Pressure: {{ weather_info.main.pressure }} </li>
+                <li>Humidity: {{ weather_info.main.humidity }} %</li>
+                <li>Sunrise: {{ weather_info.sys.sunrise }} </li>
+                <li>Sunset: {{ weather_info.sys.sunset }}</li>
+            </ul>
+            <h3>Vienna</h3>
+            <div id="map"></div>
+            <script>
+              function initMap() {
+                var vienna = {lat: 48.2205998, lng: 16.2399753};
+                var map = new google.maps.Map(document.getElementById('map'), {
+                  zoom: 6,
+                  center: vienna
+                });
+                var marker = new google.maps.Marker({
+                  position: vienna,
+                  map: map
+                });
+              }
+            </script>
+            <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdKxtgktxdj2KbkGra1ePDhKTF9OALeFc&callback=initMap">
+            </script>
+        </div>
+        <div class="col-sm-6">
+            <h2>Weather in location {{ weather_info2.name }}, {{weather_info2.sys.country}}</h2>
+            <ul class="a">
+                <li>Description: {{ weather_info2.weather[0].description }}</li>
+                <li>Min. temperature: {{ weather_info2.main.temp_min }} °C</li>
+                <li>Current temperature: {{ weather_info2.main.temp }} °C</li>
+                <li>Max. temperature: {{ weather_info2.main.temp_max }} °C</li>
+                <li>Pressure: {{ weather_info2.main.pressure }} </li>
+                <li>Humidity: {{ weather_info2.main.humidity }} %</li>
+                <li>Sunrise: {{ weather_info2.sys.sunrise }} </li>
+                <li>Sunset: {{ weather_info2.sys.sunset }}</li>
+            </ul>
+            <h3>Denpasar</h3>
+            <div id="map2"></div>
+            <script>
+              function initMap2() {
+
+                var denpasar = {lat: -8.6726769, lng: 114.6639671};
+                var map2 = new google.maps.Map(document.getElementById('map2'), {
+                  zoom: 8,
+                  center: denpasar
+                });
+                var marker2 = new google.maps.Marker({
+                  position: denpasar,
+                  map2: map2
+                });
+              }
+            </script>
+            <script async defer
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAdKxtgktxdj2KbkGra1ePDhKTF9OALeFc&callback=initMap2">
+            </script>
+        </div>
+    </div>
+    <div class="row cen_elem">
+            <p>Source from <a href="https://openweathermap.org/">OPENWEATHERMAP</a> on {{ current_date }}</p>
+    </div>
+</div>
+{% endblock page_content %}

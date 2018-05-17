@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html>
+<head data-suburl="">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+	
+		<meta name="author" content="patrick__" />
+		<meta name="description" content="CourseCodes - Codes Written in the Course" />
+		<meta name="keywords" content="go, git, self-hosted, gogs">
+	
+	<meta name="referrer" content="no-referrer" />
+	<meta name="_csrf" content="VvnV4fKONgBX2eA-bMnD3yQ9WoA6MTUxODEyMjA2NDA5NDI4NjgyNw==" />
+	<meta name="_suburl" content="" />
+	
+	
+	
+		<meta property="og:url" content="https://try.gogs.io/patrick__/CourseCodes" />
+		<meta property="og:type" content="object" />
+		<meta property="og:title" content="patrick__/CourseCodes">
+		<meta property="og:description" content="Codes Written in the Course">
+		<meta property="og:image" content="https://secure.gravatar.com/avatar/531808cf206a885f691c1589b3b7e988" />
+	
+
+	<link rel="shortcut icon" href="/img/favicon.png" />
+
+	<script src="/js/jquery-1.11.3.min.js"></script>
+	<script src="/js/libs/jquery.are-you-sure.js"></script>
+	<link rel="stylesheet" href="/assets/font-awesome-4.6.3/css/font-awesome.min.css">
+	<link rel="stylesheet" href="/assets/octicons-4.3.0/octicons.min.css">
+
+	
+	
+
+	
+
+	
+	<link rel="stylesheet" href="/css/semantic-2.2.13.min.css">
+	<link rel="stylesheet" href="/css/gogs.css?v=cecb1a897806205111ddb7beeb6f99bc">
+
+	
+	<script src="/js/semantic-2.2.13.min.js"></script>
+	<script src="/js/gogs.js?v=cecb1a897806205111ddb7beeb6f99bc"></script>
+
+	<title>patrick__/CourseCodes: Codes Written in the Course - Gogs</title>
+
+	<meta name="theme-color" content="#ff5343">
+
+	
+</head>
+<body>
+	<div class="full height">
+		<noscript>Please enable JavaScript in your browser!</noscript>
+
+		
+			<div class="following bar light">
+				<div class="ui container">
+					<div class="ui grid">
+						<div class="column">
+							<div class="ui top secondary menu">
+								<a class="item brand" href="/">
+									<img class="ui mini image" src="/img/favicon.png">
+								</a>
+
+								
+									<a class="item" href="/">Startseite</a>
+								
+
+								<a class="item" href="/explore/repos">Erkunden</a>
+								
+
+								
+
+									<a class="item" target="_blank" href="https://gogs.io/docs" rel="noreferrer">Hilfe</a>
+									<div class="right menu">
+										
+											<a class="item" href="/user/sign_up">
+												<i class="octicon octicon-person"></i> Registrieren
+											</a>
+										
+										<a class="item" href="/user/login?redirect_to=%2fpatrick__%2fCourseCodes%2fsrc%2fmaster%2fExtra%2fcapitals_game%2fcapitals.json">
+											<i class="octicon octicon-sign-in"></i> Anmelden
+										</a>
+									</div>
+
+								
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		
+
+
+<div class="repository file list">
+	<div class="header-wrapper">
+
+	<div class="ui container">
+		<div class="ui vertically padded grid head">
+			<div class="column">
+				<div class="ui header">
+					<div class="ui huge breadcrumb">
+						<i class="mega-octicon octicon-repo"></i>
+						<a href="/patrick__">patrick__</a>
+						<div class="divider"> / </div>
+						<a href="/patrick__/CourseCodes">CourseCodes</a>
+						
+						
+					</div>
+
+					
+						<div class="ui right">
+							<div class="ui labeled button" tabindex="0">
+								<a class="ui basic button" href="/patrick__/CourseCodes/action/watch?redirect_to=%2fpatrick__%2fCourseCodes%2fsrc%2fmaster%2fExtra%2fcapitals_game%2fcapitals.json">
+									<i class="icon fa-eye-slash"></i>Beobachten
+								</a>
+								<a class="ui basic label" href="/patrick__/CourseCodes/watchers">
+									1
+								</a>
+							</div>
+							<div class="ui labeled button" tabindex="0">
+								<a class="ui basic button" href="/patrick__/CourseCodes/action/star?redirect_to=%2fpatrick__%2fCourseCodes%2fsrc%2fmaster%2fExtra%2fcapitals_game%2fcapitals.json">
+									<i class="icon fa-star-o"></i>Favorit hinzufügen
+								</a>
+								<a class="ui basic label" href="/patrick__/CourseCodes/stars">
+									0
+								</a>
+							</div>
+							
+								<div class="ui labeled button" tabindex="0">
+									<a class="ui basic button " href="/repo/fork/10783">
+										<i class="octicon octicon-repo-forked"></i>Fork
+									</a>
+									<a class="ui basic label" href="/patrick__/CourseCodes/forks">
+										0
+									</a>
+								</div>
+							
+						</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class="ui tabs container">
+		<div class="ui tabular menu navbar">
+			
+				<a class="active item" href="/patrick__/CourseCodes">
+					<i class="octicon octicon-file-text"></i> Dateien
+				</a>
+			
+			
+				<a class=" item" href="/patrick__/CourseCodes/issues">
+					<i class="octicon octicon-issue-opened"></i> Issues <span class="ui gray small label">0</span>
+				</a>
+			
+			
+				<a class=" item" href="/patrick__/CourseCodes/pulls">
+					<i class="octicon octicon-git-pull-request"></i> Pull-Requests <span class="ui gray small label">0</span>
+				</a>
+			
+			
+				<a class=" item" href="/patrick__/CourseCodes/wiki">
+					<i class="octicon octicon-book"></i> Wiki
+				</a>
+			
+			
+		</div>
+	</div>
+	<div class="ui tabs divider"></div>
+
+</div>
+
+	<div class="ui container">
+		
+
+
+
+
+		
+		<div class="ui secondary menu">
+			
+			<div class="fitted item choose reference">
+	<div class="ui floating filter dropdown" data-no-results="Keine Ergebnisse verfügbar.">
+			<div class="ui basic small button">
+			<span class="text">
+				<i class="octicon octicon-git-branch"></i>
+				Branch:
+				<strong>master</strong>
+			</span>
+			<i class="dropdown icon"></i>
+		</div>
+		<div class="menu">
+			<div class="ui icon search input">
+				<i class="filter icon"></i>
+				<input name="search" placeholder="Nach Branch oder Tag filtern...">
+			</div>
+			<div class="header">
+				<div class="ui grid">
+					<div class="two column row">
+						<a class="reference column" href="#" data-target="#branch-list">
+							<span class="text black">
+								Branches
+							</span>
+						</a>
+						<a class="reference column" href="#" data-target="#tag-list">
+							<span class="text ">
+								Tags
+							</span>
+						</a>
+					</div>
+				</div>
+			</div>
+			<div id="branch-list" class="scrolling menu" >
+				
+					<div class="item selected" data-url="/patrick__/CourseCodes/src/master/Extra/capitals_game/capitals.json">master</div>
+				
+			</div>
+			<div id="tag-list" class="scrolling menu" style="display: none">
+				
+			</div>
+		</div>
+	</div>
+</div>
+
+			<div class="fitted item">
+				<div class="ui breadcrumb">
+					<a class="section" href="/patrick__/CourseCodes/src/master">CourseCodes</a>
+					
+					
+					
+						<div class="divider"> / </div>
+						
+							
+							<span class="section"><a href="/patrick__/CourseCodes/src/master/Extra">Extra</a></span>
+						
+					
+						<div class="divider"> / </div>
+						
+							
+							<span class="section"><a href="/patrick__/CourseCodes/src/master/Extra/capitals_game">capitals_game</a></span>
+						
+					
+						<div class="divider"> / </div>
+						
+							<span class="active section">capitals.json</span>
+						
+					
+				</div>
+			</div>
+			<div class="right fitted item">
+				
+					<div id="file-buttons" class="ui tiny blue buttons">
+						
+						
+					</div>
+				
+
+				
+				
+			</div>
+		</div>
+		
+			<div id="file-content" class="tab-size-8">
+	<h4 class="ui top attached header" id="repo-read-file">
+		
+			<i class="file text outline icon ui left"></i>
+			<strong>capitals.json</strong> <span class="text grey normal">5.7 KB</span>
+		
+		
+			<div class="ui right file-actions">
+				<div class="ui buttons">
+					
+						<a class="ui button" href="/patrick__/CourseCodes/src/bce8d43660d8a342f1f5d7bbaa155875df8897dc/Extra/capitals_game/capitals.json">Permalink</a>
+					
+					<a class="ui button" href="/patrick__/CourseCodes/commits/master/Extra/capitals_game/capitals.json">Verlauf</a>
+					<a class="ui button" href="/patrick__/CourseCodes/raw/master/Extra/capitals_game/capitals.json">Originalformat</a>
+				</div>
+				
+					
+						<i class="octicon octicon-pencil btn-octicon poping up disabled" data-content="Um die Datei zu bearbeiten, müssen Sie das Repository forken" data-position="bottom center" data-variation="tiny inverted"></i>
+					
+					
+						<i class="octicon octicon-trashcan btn-octicon poping up disabled" data-content="Du musst Schreibzugriff haben, um Änderungen an dieser Datei vorzuschlagen oder vorzunehmen" data-position="bottom center" data-variation="tiny inverted"></i>
+					
+				
+			</div>
+		
+	</h4>
+	<div class="ui attached table segment">
+		<div id="" class="file-view code-view has-emoji">
+			
+				<table>
+					<tbody>
+						<tr>
+						
+							<td class="lines-num"><span id="L1">1</span></td>
+							<td class="lines-code"><pre><code class="json"><ol class="linenums"><li class="L1" rel="L1">{&#34;United Arab Emirates&#34;:&#34;Abu Dhabi&#34;,&#34;Nigeria&#34;:&#34;Abuja&#34;,&#34;Ghana&#34;:&#34;Accra&#34;,&#34;Pitcairn Islands&#34;:&#34;Adamstown&#34;,&#34;Ethiopia&#34;:&#34;Addis Ababa&#34;,&#34;Algeria&#34;:&#34;Algiers&#34;,&#34;Niue&#34;:&#34;Alofi&#34;,&#34;Jordan&#34;:&#34;Amman&#34;,&#34;Netherlands&#34;:&#34;Amsterdam&#34;,&#34;Andorra&#34;:&#34;Andorra la Vella&#34;,&#34;Turkey&#34;:&#34;Ankara&#34;,&#34;Madagascar&#34;:&#34;Antananarivo&#34;,&#34;Samoa&#34;:&#34;Apia&#34;,&#34;Turkmenistan&#34;:&#34;Ashgabat&#34;,&#34;Eritrea&#34;:&#34;Asmara&#34;,&#34;Kazakhstan&#34;:&#34;Astana&#34;,&#34;Paraguay&#34;:&#34;Asuncin&#34;,&#34;Greece&#34;:&#34;Athens&#34;,&#34;Cook Islands&#34;:&#34;Avarua&#34;,&#34;Iraq&#34;:&#34;Baghdad&#34;,&#34;Azerbaijan&#34;:&#34;Baku&#34;,&#34;Mali&#34;:&#34;Bamako&#34;,&#34;Brunei&#34;:&#34;Bandar Seri Begawan&#34;,&#34;Thailand&#34;:&#34;Bangkok&#34;,&#34;Central African Republic&#34;:&#34;Bangui&#34;,&#34;Gambia&#34;:&#34;Banjul&#34;,&#34;Saint Kitts and Nevis&#34;:&#34;Basseterre&#34;,&#34;China&#34;:&#34;Beijing&#34;,&#34;Lebanon&#34;:&#34;Beirut&#34;,&#34;Serbia&#34;:&#34;Belgrade&#34;,&#34;Belize&#34;:&#34;Belmopan&#34;,&#34;Germany&#34;:&#34;Berlin&#34;,&#34;Switzerland&#34;:&#34;Bern&#34;,&#34;Kyrgyzstan&#34;:&#34;Bishkek&#34;,&#34;Guinea-Bissau&#34;:&#34;Bissau&#34;,&#34;Colombia&#34;:&#34;Bogot&#34;,&#34;Brazil&#34;:&#34;Braslia&#34;,&#34;Slovakia&#34;:&#34;Bratislava&#34;,&#34;Republic of the Congo&#34;:&#34;Brazzaville&#34;,&#34;Barbados&#34;:&#34;Bridgetown&#34;,&#34;Belgium&#34;:&#34;Brussels&#34;,&#34;Romania&#34;:&#34;Bucharest&#34;,&#34;Hungary&#34;:&#34;Budapest&#34;,&#34;Argentina&#34;:&#34;Buenos Aires&#34;,&#34;Burundi&#34;:&#34;Bujumbura&#34;,&#34;Egypt&#34;:&#34;Cairo&#34;,&#34;Australia&#34;:&#34;Canberra&#34;,&#34;Venezuela&#34;:&#34;Caracas&#34;,&#34;Saint Lucia&#34;:&#34;Castries&#34;,&#34;French Guiana&#34;:&#34;Cayenne&#34;,&#34;United States Virgin Islands&#34;:&#34;Charlotte Amalie&#34;,&#34;Moldova&#34;:&#34;Chisinau&#34;,&#34;Turks and Caicos Islands&#34;:&#34;Cockburn Town&#34;,&#34;Guinea&#34;:&#34;Conakry&#34;,&#34;Denmark&#34;:&#34;Copenhagen&#34;,&#34;Senegal&#34;:&#34;Dakar&#34;,&#34;Syria&#34;:&#34;Damascus&#34;,&#34;Bangladesh&#34;:&#34;Dhaka&#34;,&#34;East Timor (Timor-Leste)&#34;:&#34;Dili&#34;,&#34;Djibouti&#34;:&#34;Djibouti&#34;,&#34;Tanzania&#34;:&#34;Dodoma&#34;,&#34;Qatar&#34;:&#34;Doha&#34;,&#34;Isle of Man&#34;:&#34;Douglas&#34;,&#34;Ireland&#34;:&#34;Dublin&#34;,&#34;Tajikistan&#34;:&#34;Dushanbe&#34;,&#34;Tristan da Cunha&#34;:&#34;Edinburgh of the Seven Seas&#34;,&#34;Sahrawi Arab Democratic Republic&#34;:&#34;El Aain&#34;,&#34;Akrotiri and Dhekelia&#34;:&#34;Episkopi Cantonment&#34;,&#34;Christmas Island&#34;:&#34;Flying Fish Cove&#34;,&#34;Sierra Leone&#34;:&#34;Freetown&#34;,&#34;Tuvalu&#34;:&#34;Funafuti&#34;,&#34;Botswana&#34;:&#34;Gaborone&#34;,&#34;Cayman Islands&#34;:&#34;George Town&#34;,&#34;Ascension Island&#34;:&#34;Georgetown&#34;,&#34;Guyana&#34;:&#34;Georgetown&#34;,&#34;Gibraltar&#34;:&#34;Gibraltar&#34;,&#34;South Georgia and the South Sandwich Islands&#34;:&#34;Grytviken&#34;,&#34;Guatemala&#34;:&#34;Guatemala City&#34;,&#34;Saint Barthlemy&#34;:&#34;Gustavia&#34;,&#34;Guam&#34;:&#34;Hagta&#34;,&#34;Bermuda&#34;:&#34;Hamilton&#34;,&#34;Easter Island&#34;:&#34;Hanga Roa&#34;,&#34;Vietnam&#34;:&#34;Hanoi&#34;,&#34;Zimbabwe&#34;:&#34;Harare&#34;,&#34;Somaliland&#34;:&#34;Hargeisa&#34;,&#34;Cuba&#34;:&#34;Havana&#34;,&#34;Finland&#34;:&#34;Helsinki&#34;,&#34;Solomon Islands&#34;:&#34;Honiara&#34;,&#34;Pakistan&#34;:&#34;Islamabad&#34;,&#34;Indonesia&#34;:&#34;Jakarta&#34;,&#34;Saint Helena&#34;:&#34;Jamestown&#34;,&#34;Israel&#34;:&#34;Jerusalem&#34;,&#34;State of Palestine&#34;:&#34;Jerusalem&#34;,&#34;South Sudan&#34;:&#34;Juba&#34;,&#34;Afghanistan&#34;:&#34;Kabul&#34;,&#34;Uganda&#34;:&#34;Kampala&#34;,&#34;Nepal&#34;:&#34;Kathmandu&#34;,&#34;Sudan&#34;:&#34;Khartoum&#34;,&#34;Ukraine&#34;:&#34;Kiev&#34;,&#34;Rwanda&#34;:&#34;Kigali&#34;,&#34;Jamaica&#34;:&#34;Kingston&#34;,&#34;Norfolk Island&#34;:&#34;Kingston&#34;,&#34;Saint Vincent and the Grenadines&#34;:&#34;Kingstown&#34;,&#34;Democratic Republic of the Congo&#34;:&#34;Kinshasa&#34;,&#34;Malaysia&#34;:&#34;Kuala Lumpur&#34;,&#34;Kuwait&#34;:&#34;Kuwait City&#34;,&#34;Gabon&#34;:&#34;Libreville&#34;,&#34;Malawi&#34;:&#34;Lilongwe&#34;,&#34;Peru&#34;:&#34;Lima&#34;,&#34;Portugal&#34;:&#34;Lisbon&#34;,&#34;Slovenia&#34;:&#34;Ljubljana&#34;,&#34;Togo&#34;:&#34;Lom&#34;,&#34;United Kingdom&#34;:&#34;London&#34;,&#34;Angola&#34;:&#34;Luanda&#34;,&#34;Zambia&#34;:&#34;Lusaka&#34;,&#34;Luxembourg&#34;:&#34;Luxembourg&#34;,&#34;Spain&#34;:&#34;Madrid&#34;,&#34;Marshall Islands&#34;:&#34;Majuro&#34;,&#34;Equatorial Guinea&#34;:&#34;Malabo&#34;,&#34;Maldives&#34;:&#34;Mal&#34;,&#34;Nicaragua&#34;:&#34;Managua&#34;,&#34;Bahrain&#34;:&#34;Manama&#34;,&#34;Philippines&#34;:&#34;Manila&#34;,&#34;Mozambique&#34;:&#34;Maputo&#34;,&#34;Saint Martin&#34;:&#34;Marigot&#34;,&#34;Lesotho&#34;:&#34;Maseru&#34;,&#34;Wallis and Futuna&#34;:&#34;Mata-Utu&#34;,&#34;Swaziland&#34;:&#34;Mbabane&#34;,&#34;Palau&#34;:&#34;Melekeok&#34;,&#34;Mexico&#34;:&#34;Mexico City&#34;,&#34;Belarus&#34;:&#34;Minsk&#34;,&#34;Somalia&#34;:&#34;Mogadishu&#34;,&#34;Monaco&#34;:&#34;Monaco&#34;,&#34;Liberia&#34;:&#34;Monrovia&#34;,&#34;Uruguay&#34;:&#34;Montevideo&#34;,&#34;Comoros&#34;:&#34;Moroni&#34;,&#34;Russia&#34;:&#34;Moscow&#34;,&#34;Oman&#34;:&#34;Muscat&#34;,&#34;Kenya&#34;:&#34;Nairobi&#34;,&#34;Bahamas&#34;:&#34;Nassau&#34;,&#34;Burma&#34;:&#34;Naypyidaw&#34;,&#34;Chad&#34;:&#34;N&#39;Djamena&#34;,&#34;India&#34;:&#34;New Delhi&#34;,&#34;Niger&#34;:&#34;Niamey&#34;,&#34;Cyprus&#34;:&#34;Nicosia&#34;,&#34;Northern Cyprus&#34;:&#34;Nicosia&#34;,&#34;Mauritania&#34;:&#34;Nouakchott&#34;,&#34;New Caledonia&#34;:&#34;Nouma&#34;,&#34;Tonga&#34;:&#34;Nuku?alofa&#34;,&#34;Greenland&#34;:&#34;Nuuk&#34;,&#34;Aruba&#34;:&#34;Oranjestad&#34;,&#34;Norway&#34;:&#34;Oslo&#34;,&#34;Canada&#34;:&#34;Ottawa&#34;,&#34;Burkina Faso&#34;:&#34;Ouagadougou&#34;,&#34;American Samoa&#34;:&#34;Pago Pago&#34;,&#34;Federated States of Micronesia&#34;:&#34;Palikir&#34;,&#34;Panama&#34;:&#34;Panama City&#34;,&#34;French Polynesia&#34;:&#34;Papeete&#34;,&#34;Suriname&#34;:&#34;Paramaribo&#34;,&#34;France&#34;:&#34;Paris&#34;,&#34;Sint Maarten&#34;:&#34;Philipsburg&#34;,&#34;Cambodia&#34;:&#34;Phnom Penh&#34;,&#34;Montserrat&#34;:&#34;Plymouth&#34;,&#34;Montenegro&#34;:&#34;Podgorica&#34;,&#34;Mauritius&#34;:&#34;Port Louis&#34;,&#34;Papua New Guinea&#34;:&#34;Port Moresby&#34;,&#34;Vanuatu&#34;:&#34;Port Vila&#34;,&#34;Haiti&#34;:&#34;Port-au-Prince&#34;,&#34;Trinidad and Tobago&#34;:&#34;Port of Spain&#34;,&#34;Benin&#34;:&#34;Porto-Novo&#34;,&#34;Czech Republic&#34;:&#34;Prague&#34;,&#34;Cape Verde&#34;:&#34;Praia&#34;,&#34;South Africa&#34;:&#34;Pretoria&#34;,&#34;Kosovo&#34;:&#34;Pristina&#34;,&#34;North Korea&#34;:&#34;Pyongyang&#34;,&#34;Ecuador&#34;:&#34;Quito&#34;,&#34;Morocco&#34;:&#34;Rabat&#34;,&#34;Iceland&#34;:&#34;Reykjavk&#34;,&#34;Latvia&#34;:&#34;Riga&#34;,&#34;Saudi Arabia&#34;:&#34;Riyadh&#34;,&#34;British Virgin Islands&#34;:&#34;Road Town&#34;,&#34;Italy&#34;:&#34;Rome&#34;,&#34;Dominica&#34;:&#34;Roseau&#34;,&#34;Northern Mariana Islands&#34;:&#34;Saipan&#34;,&#34;Costa Rica&#34;:&#34;San Jos&#34;,&#34;Puerto Rico&#34;:&#34;San Juan&#34;,&#34;San Marino&#34;:&#34;San Marino&#34;,&#34;El Salvador&#34;:&#34;San Salvador&#34;,&#34;Yemen&#34;:&#34;Sana&#39;a&#34;,&#34;Chile&#34;:&#34;Santiago&#34;,&#34;Dominican Republic&#34;:&#34;Santo Domingo&#34;,&#34;So Tom and Prncipe&#34;:&#34;So Tom&#34;,&#34;Bosnia and Herzegovina&#34;:&#34;Sarajevo&#34;,&#34;South Korea&#34;:&#34;Seoul&#34;,&#34;Singapore&#34;:&#34;Singapore&#34;,&#34;Macedonia&#34;:&#34;Skopje&#34;,&#34;Bulgaria&#34;:&#34;Sofia&#34;,&#34;Sri Lanka&#34;:&#34;Sri Jayawardenepura Kotte&#34;,&#34;Grenada&#34;:&#34;St. George&#39;s&#34;,&#34;Jersey&#34;:&#34;St. Helier&#34;,&#34;Antigua and Barbuda&#34;:&#34;St. John&#39;s&#34;,&#34;Guernsey&#34;:&#34;St. Peter Port&#34;,&#34;Saint Pierre and Miquelon&#34;:&#34;St. Pierre&#34;,&#34;Falkland Islands&#34;:&#34;Stanley&#34;,&#34;Nagorno-Karabakh Republic&#34;:&#34;Stepanakert&#34;,&#34;Sweden&#34;:&#34;Stockholm&#34;,&#34;Bolivia&#34;:&#34;Sucre&#34;,&#34;Abkhazia&#34;:&#34;Sukhumi&#34;,&#34;Fiji&#34;:&#34;Suva&#34;,&#34;Taiwan&#34;:&#34;Taipei&#34;,&#34;Estonia&#34;:&#34;Tallinn&#34;,&#34;Kiribati&#34;:&#34;Tarawa&#34;,&#34;Uzbekistan&#34;:&#34;Tashkent&#34;,&#34;Georgia&#34;:&#34;Tbilisi&#34;,&#34;Honduras&#34;:&#34;Tegucigalpa&#34;,&#34;Iran&#34;:&#34;Tehran&#34;,&#34;Bhutan&#34;:&#34;Thimphu&#34;,&#34;Albania&#34;:&#34;Tirana&#34;,&#34;Transnistria&#34;:&#34;Tiraspol&#34;,&#34;Japan&#34;:&#34;Tokyo&#34;,&#34;Faroe Islands&#34;:&#34;Trshavn&#34;,&#34;Libya&#34;:&#34;Tripoli&#34;,&#34;South Ossetia&#34;:&#34;Tskhinvali&#34;,&#34;Tunisia&#34;:&#34;Tunis&#34;,&#34;Mongolia&#34;:&#34;Ulan Bator&#34;,&#34;Liechtenstein&#34;:&#34;Vaduz&#34;,&#34;Malta&#34;:&#34;Valletta&#34;,&#34;Anguilla&#34;:&#34;The Valley&#34;,&#34;Vatican City&#34;:&#34;Vatican City&#34;,&#34;Seychelles&#34;:&#34;Victoria&#34;,&#34;Austria&#34;:&#34;Vienna&#34;,&#34;Laos&#34;:&#34;Vientiane&#34;,&#34;Lithuania&#34;:&#34;Vilnius&#34;,&#34;Poland&#34;:&#34;Warsaw&#34;,&#34;United States&#34;:&#34;Washington, D.C.&#34;,&#34;New Zealand&#34;:&#34;Wellington&#34;,&#34;Cocos (Keeling) Islands&#34;:&#34;West Island&#34;,&#34;Curaao&#34;:&#34;Willemstad&#34;,&#34;Namibia&#34;:&#34;Windhoek&#34;,&#34;Ivory Coast&#34;:&#34;Yamoussoukro&#34;,&#34;Cameroon&#34;:&#34;Yaound&#34;,&#34;Nauru&#34;:&#34;Yaren&#34;,&#34;Armenia&#34;:&#34;Yerevan&#34;,&#34;Croatia&#34;:&#34;Zagreb&#34;}</li>
+</ol></code></pre></td>
+						
+						</tr>
+					</tbody>
+				</table>
+			
+		</div>
+	</div>
+</div>
+
+<script>
+function submitDeleteForm() {
+    var message = prompt("delete_confirm_message\n\ndelete_commit_summary", "Delete ''");
+    if (message != null) {
+        $("#delete-message").val(message);
+        $("#delete-file-form").submit()
+    }
+}
+</script>
+
+		
+	</div>
+</div>
+
+	</div>
+	<footer>
+		<div class="ui container">
+			<div class="ui left">
+				© 2017 Gogs Version: 0.11.34.1122 Seite: <strong>33ms</strong> Vorlage: <strong>1ms</strong>
+			</div>
+			<div class="ui right links">
+				
+					<a target="_blank" href="https://github.com/gogits/gogs"><i class="fa fa-github-square"></i><span class="sr-only">GitHub</span></a>
+					<a target="_blank" href="https://twitter.com/GogsHQ"><i class="fa fa-twitter"></i><span class="sr-only">Twitter</span></a>
+					<a target="_blank" href="http://weibo.com/gogschina"><i class="fa fa-weibo"></i><span class="sr-only">Sina Weibo</span></a>
+				
+				<div class="ui language bottom floating slide up dropdown link item">
+					<i class="world icon"></i>
+					<div class="text">Deutsch</div>
+					<div class="menu">
+						
+							<a class="item active selected" href="#">Deutsch</a>
+						
+							<a class="item " href="/patrick__/CourseCodes/src/master/Extra/capitals_game/capitals.json?lang=en-US">English</a>
+						
+							<a class="item " href="/patrick__/CourseCodes/src/master/Extra/capitals_game/capitals.json?lang=zh-CN">简体中文</a>
+						
+							<a class="item " href="/patrick__/CourseCodes/src/master/Extra/capitals_game/capitals.json?lang=zh-HK">繁體中文（香港）</a>
+						
+							<a class="item " href="/patrick__/CourseCodes/src/master/Extra/capitals_game/capitals.json?lang=zh-TW">繁體中文（臺灣）</a>
+						
+							<a class="item " href="/patrick__/CourseCodes/src/master/Extra/capitals_game/capitals.json?lang=fr-FR">français</a>
+						
+							<a class="item " href="/patrick__/CourseCodes/src/master/Extra/capitals_game/capitals.json?lang=nl-NL">Nederlands</a>
+						
+							<a class="item " href="/patrick__/CourseCodes/src/master/Extra/capitals_game/capitals.json?lang=lv-LV">latviešu</a>
+						
+							<a class="item " href="/patrick__/CourseCodes/src/master/Extra/capitals_game/capitals.json?lang=ru-RU">русский</a>
+						
+							<a class="item " href="/patrick__/CourseCodes/src/master/Extra/capitals_game/capitals.json?lang=ja-JP">日本語</a>
+						
+							<a class="item " href="/patrick__/CourseCodes/src/master/Extra/capitals_game/capitals.json?lang=es-ES">español</a>
+						
+							<a class="item " href="/patrick__/CourseCodes/src/master/Extra/capitals_game/capitals.json?lang=pt-BR">português do Brasil</a>
+						
+							<a class="item " href="/patrick__/CourseCodes/src/master/Extra/capitals_game/capitals.json?lang=pl-PL">polski</a>
+						
+							<a class="item " href="/patrick__/CourseCodes/src/master/Extra/capitals_game/capitals.json?lang=bg-BG">български</a>
+						
+							<a class="item " href="/patrick__/CourseCodes/src/master/Extra/capitals_game/capitals.json?lang=it-IT">italiano</a>
+						
+							<a class="item " href="/patrick__/CourseCodes/src/master/Extra/capitals_game/capitals.json?lang=fi-FI">suomi</a>
+						
+							<a class="item " href="/patrick__/CourseCodes/src/master/Extra/capitals_game/capitals.json?lang=tr-TR">Türkçe</a>
+						
+							<a class="item " href="/patrick__/CourseCodes/src/master/Extra/capitals_game/capitals.json?lang=cs-CZ">čeština</a>
+						
+							<a class="item " href="/patrick__/CourseCodes/src/master/Extra/capitals_game/capitals.json?lang=sr-SP">српски</a>
+						
+							<a class="item " href="/patrick__/CourseCodes/src/master/Extra/capitals_game/capitals.json?lang=sv-SE">svenska</a>
+						
+							<a class="item " href="/patrick__/CourseCodes/src/master/Extra/capitals_game/capitals.json?lang=ko-KR">한국어</a>
+						
+							<a class="item " href="/patrick__/CourseCodes/src/master/Extra/capitals_game/capitals.json?lang=gl-ES">galego</a>
+						
+							<a class="item " href="/patrick__/CourseCodes/src/master/Extra/capitals_game/capitals.json?lang=uk-UA">українська</a>
+						
+							<a class="item " href="/patrick__/CourseCodes/src/master/Extra/capitals_game/capitals.json?lang=en-GB">English (United Kingdom)</a>
+						
+							<a class="item " href="/patrick__/CourseCodes/src/master/Extra/capitals_game/capitals.json?lang=hu-HU">Magyar</a>
+						
+							<a class="item " href="/patrick__/CourseCodes/src/master/Extra/capitals_game/capitals.json?lang=sk-SK">slovenský</a>
+						
+					</div>
+				</div>
+				<a href="/assets/librejs/librejs.html" style="display:none" data-jslicense="1">Javascript Licenses</a>
+				<a target="_blank" href="https://gogs.io">Webseite</a>
+				<span class="version">Go1.9.2</span>
+			</div>
+		</div>
+	</footer>
+</body>
+
+
+
+	<link rel="stylesheet" href="/plugins/highlight-9.6.0/github.css">
+	<script src="/plugins/highlight-9.6.0/highlight.pack.js"></script>
+
+
+
+
+<script src="/js/libs/emojify-1.1.0.min.js"></script>
+<script src="/js/libs/clipboard-1.5.9.min.js"></script>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-40109089-11', 'auto');
+  ga('send', 'pageview');
+
+</script>
+
+</html>
+

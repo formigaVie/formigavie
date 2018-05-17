@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block title %} Lotto {% endblock title %}
+{% block page_content %}
+
+<div class="container-fluid">
+    <h1>Lotto</h1>
+    <h2>My lucky numbers for the next lotto session are: {{ mylotto }}</h2>
+    <h4>Generated on: {{ site_date }}</h4>
+
+    <br>
+    <h2>History</h2>
+    <ul>
+        {% for entry in site_history %}
+        <li> {{ entry }} </li>
+        {% endfor %}
+    </ul>
+</div>
+{% endblock page_content %}

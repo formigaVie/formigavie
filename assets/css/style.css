@@ -1,0 +1,38 @@
+.titletop {
+    margin-top:40px;
+}
+
+
+.formbody{
+    margin-bottom:80px;
+}
+
+.col-border{
+    border-right:1px solid;
+}
+
+.img-center{
+    max-height: 400px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.a {
+    list-style-type: circle;
+}
+
+.cen_elem{
+    margin: 0 auto;
+}
+
+#map{
+    height: 250px;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#map2{
+    height: 250px;
+    width: 80%;
+    margin: 0 auto;
+}

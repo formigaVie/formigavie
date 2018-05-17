@@ -1,0 +1,60 @@
+{% extends "base.html" %}
+
+{% block title %} capitalsgame {% endblock title %}
+{% block page_content %}
+<div class="container-fluid">
+    <div class="row">
+      <h1>Under Construction</h1>
+    </div>
+</div>
+
+<div class="container-fluid">
+    <div class="row">
+      <h2>Question:</h2>
+    </div>
+</div>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-2">
+            <form method="post">
+                <button class="btn btn-primary" type="submit" value="A" name="answer"> A </button>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <p>text1</p>
+        </div>
+        <div class="col-md-2">
+            <form method="post">
+                <button class="btn btn-primary"  type="submit" value="B" name="answer"> B </button>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <p>text2</p>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col-md-2">
+            <form method="post">
+                <button class="btn btn-primary" type="submit" value="C" name="answer"> C </button>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <p>text3</p>
+        </div>
+        <div class="col-md-2">
+            <form method="post">
+                <button class="btn btn-primary" type="submit" value="D" name="answer"> D </button>
+            </form>
+        </div>
+        <div class="col-md-4">
+            <p>text4</p>
+        </div>
+
+    </div>
+    <ul>
+        {% for entry in page_history %}
+        <li> {{ entry }} </li>
+        {% endfor %}
+    </ul>
+{% endblock page_content %}

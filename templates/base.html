@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Bootstrap CSS -->
+    <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="../assets/css/style.css">
+    <!-- JavaScript files -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <script src="../assets/js/script.js"></script>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock title %}</title>
+</head>
+<body>
+    <nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="/">formigaVie</a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+                <li><a href="/realblog">Realblog</a></li>
+                <li><a href="/contact">Contact</a></li>
+                <li><a href="/weather">Weather Info</a></li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                       aria-expanded="false">Some Projects <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="/password">Password Generator</a></li>
+                        <li><a href="/crypto">Cryptocurrencies</a></li>
+                        <li><a href="/sng">Secret Number Game</a></li>
+                        <li><a href="/lotto">Lotto</a></li>
+                        <li><a href="/capital">Capitalsgame</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                        <li><a href="/calculator">Calculator</a></li>
+                        <li><a href="/unitconverter">Unit Converter</a></li>
+                        <li><a href="/todo">Todo Tasks</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="navbar-form navbar-left">
+                <div class="form-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                </div>
+                <button type="submit" class="btn btn-default">Submit</button>
+            </form>
+            {% if logged_in %}
+                <p class="navbar-text navbar-right">
+                    <a href="{{logout_url}}">
+                        <span class="glyphicon glyphicon-log-out"></span> Logout
+                    </a>
+                </p>
+                <p class="navbar-text navbar-right"> <span class="glyphicon glyphicon-user"></span> {{user.nickname()}} </p>
+            {% else %}
+                <p class="navbar-text navbar-right">
+                    <a href="{{login_url}}">
+                        <span class="glyphicon glyphicon-log-in"></span> Login
+                    </a>
+                </p>
+            {% endif %}
+            <p class="navbar-text navbar-right" id="time"></p>
+        </div><!-- /.navbar-collapse --
+    </div><!-- /.container-fluid -->
+    </nav>
+{% block page_content %} {% endblock page_content %}
+</body>
+</html>

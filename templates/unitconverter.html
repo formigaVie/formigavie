@@ -1,0 +1,16 @@
+{% extends "base.html" %}
+
+{% block title %} Unit Converter {% endblock title %}
+{% block page_content %}
+<div class="container-fluid">
+    <h1>Welcome to the Unit Converter</h1>
+    <h2>Please enter your kilometer(km) value which you want to be converted to miles:</h2>
+        <form method="post">
+            <input placeholder="Length" type="number" name="length">
+            <button type="submit">Convert</button>
+        </form>
+    {% if has_guessed %}
+        <h3>The conversion from {{ initst }} km are {{ convers }} miles!</h3>
+    {% endif %}
+</div>
+{% endblock page_content %}

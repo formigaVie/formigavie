@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %} Calculator {% endblock title %}
+{% block page_content %}
+<div class="container-fluid">
+    <h1>Welcome to the Calculator</h1>
+    <h2>Please enter your calculation:</h2>
+        <form method="post">
+            <input placeholder="First number" type="number" name="x">
+            <input placeholder="operator" type="text" name="operation_symbol">
+            <input placeholder="Second number" type="number" name="y">
+            <button type="submit">Submit</button>
+        </form>
+    {% if opsy %}
+        <h3>The solution is {{ sols }}</h3>
+    {% endif %}
+</div>
+{% endblock page_content %}

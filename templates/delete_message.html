@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %} Delete Message {% endblock title %}
+{% block page_content %}
+<h1> Delete Message</h1>
+<form method="post" action="/message/{{message.key.id()}}/delete">
+    <div class="input-group">
+        <span class="input-group-addon">name</span>
+        <input type="text" name="username" value="{{message.name}}">
+    </div>
+    <div class="input-group">
+      <span class="input-group-addon">message</span>
+      <input type="text" name="message_text" value="{{ message.message_text }}">
+    </div>
+
+    <button class="btn btn-warning" name="fdel" value="fd" type="submit">Fake-Delete</button>
+    <button class="btn btn-danger" name="del" value="de" type="submit">Delete</button>
+    <button class="btn btn-primary" name="und" value="un" type="submit">Undo</button>
+</form>
+{% endblock page_content %}

@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block title %} Secret Number Game {% endblock title %}
+{% block page_content %}
+<div class="container-fluid">
+    <h1>Welcome to the Secret Number Game</h1>
+    {% if is_guessed %}
+    <h3>Congratulations! You Won</h3>
+    {% else %}
+        {% if has_guessed %}
+            <h3>Sorry, please try again</h3>
+        {% endif %}
+        <h2>Guess the secret number between 0 and 5: </h2>
+        <form method="post">
+            <input placeholder="Guess the number" type="number" name="guess">
+            <button type="submit">Submit</button>
+        </form>
+    {% endif %}
+</div>
+{% endblock page_content %}

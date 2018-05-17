@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block title %} Todo {% endblock title %}
+{% block page_content %}
+<div class="container-fluid">
+    <h1>Welcome to the Todo Task Programm</h1>
+    <h2>Please enter your Todo Task:</h2>
+        <form method="post">
+            <textarea name="Todo">Please enter your Todo Task</textarea>
+            <button type="submit">Submit</button>
+        </form>
+    {% if guessed %}
+    <h3>your newest entry was:</h3>
+    <h4>{{ readabledate }},{{ todotask }}</h4>
+    <h5>Your Tasks:</h5>
+    <p>
+    {% for entry in sitehistory %}
+        <li> {{ entry }} </li>
+    {% endfor %}
+    </p>
+    {% endif %}
+</div>
+{% endblock page_content %}
