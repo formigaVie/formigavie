@@ -233,35 +233,40 @@ class DurationHandler(BaseHandler):
 
     def post(self):
         has_guessed = True
+        startt = self.request.get("starttime")
         solo = self.request.get("solo")
         dtq = self.request.get("dtq")
         group = self.request.get("group")
         formation = self.request.get("formation")
 
+        st = startt
         a = float(solo or 0)
         b = float(dtq or 0)
         c = float(group or 0)
         d = float(formation or 0)
 
-        if ops == "+" or ops == "-" or ops == "*" or ops == "/":
+        if st > "":
             is_ok = True
-            if ops == "+":
-                solution = a + b
-            elif ops == "-":
-                solution = a - b
-            elif ops == "/":
-                #if b == 0:
-                #    # additional entry if divisor is 0
-                #    print "Division by Zero"
-                #else:
-                solution = a / b
-            elif ops == "*":
-                solution = a * b
+            if st > 0 and a > 0:
+                sol = a * 105
+                solb = pd.to_datetime(sol, format='%M%S')
+            if st > 0 and b > 0:
+                dtq = b * 105
+                dtqb = pd.to_datetime(dtq, format='%M%S')
+            if st > 0 and c > 0:
+                group = c * 165
+                groupb = pd.to_datetime(group, format='%M%S')
+            if st > 0 and d > 0:
+                form = d * 245
+                formb = pd.to_datetime(form, format='%M%S')
         else:
             is_ok = False
 
-        return self.render_template("duration.html", params={"opsy": is_ok,
-                                                               "sols": solution})
+        return self.render_template("duration.html", params={"dssy": is_ok,
+                                                                "solc": solb,
+                                                                "dtqc":dtqb,
+                                                                "groupc":groupb,
+                                                                "formc":formb})
 
 class UnCoHandler(BaseHandler):
     def get(self):
@@ -332,7 +337,7 @@ def get_crypto_info(coin):
 
 class CryptoHandler(BaseHandler):
         def get(self):
-            coins = ["bitcoin", "ethereum", "litecoin"]
+            coins = ["bitcoin", "ethereum", "litecoin","ripple"]
             info_c = [get_crypto_info(coin) for coin in coins]
             current_datetime = datetime.datetime.now()
             readable_date = current_datetime.strftime("%Y-%m-%d %H:%M:%S")

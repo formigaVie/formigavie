@@ -1,9 +1,9 @@
 {% extends "base.html" %}
 
-{% block title %} Calculator {% endblock title %}
+{% block title %} DS Duration {% endblock title %}
 {% block page_content %}
 <div class="container-fluid">
-    <h1>Welcome to the Duration Calculator</h1>
+    <h1>Welcome to the DanceStar Duration Calculator</h1>
 
     <p>Base are the Rules & Regulations from Dancestar:</p>
     <p>https://dancestar.org/rules-regulations</p>
@@ -18,18 +18,57 @@
     6.2. Time limits have a window of 5 seconds. Failure to stay within these time limits will result in a 20-point deduction 6.3.
     6.3. Timing starts with the recognizable start and ends with the distinct end of routine
     </p>
+    <h1><bold>UNDER Construction</bold></h1>
     <h2>Please enter your calculation:</h2>
+
         <form method="post">
-            <input placeholder="Solo" type="number" name="solo">
-            <p>average duration 105s</p>
-            <input placeholder="Duo/Trio/Quartett" type="number" name="dtq">
-            <p>average duration 105s</p>
-            <input placeholder="Group" type="number" name="group">
-            <p>average duration 165s</p>
-            <input placeholder="formation" type="number" name="form">
-            <p>average duration 225s</p>
-            <button type="submit">Submit</button>
+            <input placeholder="starttime" type="time" name="starttime">
+            <div class="container-fluid cen_elem">
+                <div class="row">
+                    <div class="col-sm-6">
+                        <table class="table table-bordered">
+                            <thead>
+                                <th>Category</th>
+                                <th>Average duration [s]</th>
+                                <th>calculated time</th>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td><input placeholder="Solo" type="number" name="solo"></td>
+                                    <td>105</td>
+                                    {% if dssy %}
+                                    <td>{{ solc }}</td>
+                                    {% endif %}
+                                </tr>
+                                <tr>
+                                    <td><input placeholder="Duo/Trio/Quartett" type="number" name="dtq"></td>
+                                    <td>105</td>
+                                    {% if dssy %}
+                                    <td>{{ dtqc }}</td>
+                                    {% endif %}
+                                </tr>
+                                <tr>
+                                    <td><input placeholder="Group" type="number" name="group"></td>
+                                    <td>165</td>
+                                    {% if dssy %}
+                                    <td>{{ groupc }}</td>
+                                    {% endif %}
+                                </tr>
+                                <tr>
+                                    <td><input placeholder="formation" type="number" name="form"></td>
+                                    <td>225</td>
+                                    {% if dssy %}
+                                    <td>{{ formc }}</td>
+                                    {% endif %}
+                                </tr>
+                            </tbody>
+                        </table>
+                        <button type="submit">Submit</button>
+                    </div>
+                </div>
+            </div>
         </form>
+
     {% if opsy %}
         <h3>The solution is {{ sols }}</h3>
     {% endif %}
