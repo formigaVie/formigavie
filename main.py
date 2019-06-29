@@ -227,6 +227,41 @@ class CalcHandler(BaseHandler):
         return self.render_template("calculator.html", params={"opsy": is_ok,
                                                                "sols": solution})
 
+class DurationHandler(BaseHandler):
+    def get(self):
+        return self.render_template("duration.html")
+
+    def post(self):
+        has_guessed = True
+        solo = self.request.get("solo")
+        dtq = self.request.get("dtq")
+        group = self.request.get("group")
+        formation = self.request.get("formation")
+
+        a = float(solo or 0)
+        b = float(dtq or 0)
+        c = float(group or 0)
+        d = float(formation or 0)
+
+        if ops == "+" or ops == "-" or ops == "*" or ops == "/":
+            is_ok = True
+            if ops == "+":
+                solution = a + b
+            elif ops == "-":
+                solution = a - b
+            elif ops == "/":
+                #if b == 0:
+                #    # additional entry if divisor is 0
+                #    print "Division by Zero"
+                #else:
+                solution = a / b
+            elif ops == "*":
+                solution = a * b
+        else:
+            is_ok = False
+
+        return self.render_template("duration.html", params={"opsy": is_ok,
+                                                               "sols": solution})
 
 class UnCoHandler(BaseHandler):
     def get(self):
@@ -357,6 +392,7 @@ app = webapp2.WSGIApplication([
     webapp2.Route('/weather',WeatherHandler),
     webapp2.Route('/crypto',CryptoHandler),
     webapp2.Route('/todo',TodoHandler),
+    webapp2.Route('/duration', DurationHandler),
     # for first test this Route was established
     # webapp2.Route('/logintest', LoginHandler, name="logintest"),
 ], debug=True)
